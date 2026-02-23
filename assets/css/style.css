@@ -1,0 +1,88 @@
+:root {
+  --fg: #111;
+  --muted: #555;
+  --bg: #fff;
+  --border: #e6e6e6;
+  --link: #0b57d0;
+  --codebg: #f6f8fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.title-block { margin-bottom: 10px; }
+.site-title { font-weight: 750; font-size: 20px; }
+.site-title a { color: var(--fg); text-decoration: none; }
+.site-subtitle { color: var(--muted); font-size: 14px; }
+
+.nav a {
+  margin-right: 14px;
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 600;
+  font-size: 14px;
+}
+.nav a:hover { text-decoration: underline; }
+
+.page h1 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+h2 { margin-top: 26px; }
+
+.small { color: var(--muted); font-size: 13px; }
+
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+pre {
+  background: var(--codebg);
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+
+.badges a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--fg);
+}
+.badges a:hover { border-color: #c8c8c8; }
+
+.pub-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: -6px;
+}
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
