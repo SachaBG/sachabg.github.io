@@ -1,0 +1,38 @@
+title: "Sacha Baillarguet-Gajic"
+email: "sacha.baillarguet-gajic@inria.fr"
+description: "PhD student in cryptography — lightweight cryptography, cryptanalysis, implementations."
+url: "https://sacha-bg.github.io"
+baseurl: ""
+
+markdown: kramdown
+theme: null
+
+# On utilise un build Actions, donc on peut activer jekyll-scholar
+plugins:
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Style global
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Publications auto
+scholar:
+  style: ieee
+  locale: en
+  source: ./_bibliography
+  bibliography: publications.bib
+  bibliography_template: bib
+  sort_by: year,month
+  order: descending
+  group_by: year
+  group_order: descending
+  bibliography_list_tag: ul
+  details_dir: publications
+  details_layout: page
+  details_link: "Details"
+  query: "@*"
