@@ -4,14 +4,11 @@ layout: page
 ---
 
 ## Topics
-My research aims to design and analyze **practical attacks** against constrained symmetric primitives, and to improve how we **model, implement, and validate** such attacks.
+My primary field of research is **symmetric cryptography** and more precisely the **optimization** of the **key-recovery** procedure in **differential attacks**.
 
 Key themes:
-- **Lightweight cryptography** (design constraints, security margins, implementation trade-offs)
-- **Differential propagation & trail search**
-- **Key-recovery attacks** (collision-based / enumeration / pruning)
-- **Tooling & reproducibility** (C/C++/Python, scripts, artifacts, benchmarks)
+- **Symmetric cryptography** 
+- **Differential cryptanalysis**
+- **Key-recovery attacks** 
+- **Automated tools for cryptanalysis** 
 
-## Selected projects
-- **[Project A]** — One-sentence description, link to code/paper.
-- **[Project B]** — One-sentence description.
