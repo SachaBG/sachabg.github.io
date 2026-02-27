@@ -115,4 +115,121 @@ a:hover {
   text-align: center;
   color: var(--muted);
   font-size: 14px;
+}:root {
+  --fg: #111;
+  --muted: #666;
+  --bg: #ffffff;
+
+  /* Couleur principale (crypto/academic) */
+  --accent: #0b57d0;
+
+  /* Accent secondaire */
+  --accent-light: #e8f0fe;
+
+  --border: #e6e6e6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  background: var(--accent);
+  color: white;
+  padding: 16px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.site-subtitle {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+/* ---------- Navigation ---------- */
+
+.nav a {
+  color: white;
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+
+.wrap {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.page h1 {
+  margin-top: 0;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 8px;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Boxes / badges ---------- */
+
+.badges a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--accent-light);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.badges a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* ---------- Publications ---------- */
+
+.pub-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
 }
